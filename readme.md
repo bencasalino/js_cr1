@@ -1,12 +1,10 @@
-javascript code review 1
+javascript code review 1 Find and Replacer
 
 By Ben Casalino
 
 Description
 
 Create a website where a user enters a string, chooses a word to find and provides a replacement for that word.
-
-
 
 Setup
 
