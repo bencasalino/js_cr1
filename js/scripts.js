@@ -2,7 +2,11 @@
 //debugger;
 
 
-var wordReplace = function(
+var wordReplace = function(userString, userFind, userReplace) {
+  var userStringLower = userString.toLowerCase();
+  userFind = userFind.toLowerCase();
+
+
 
 // this part stays commented out for now but needat the end to actually display working code!
 
