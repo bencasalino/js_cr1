@@ -1,14 +1,10 @@
-// must be in loswer calem case
-var findandReplace
 
-
-// debuddeg turn on/off
 //debugger;
 
 
+var wordReplace = function(
 
-
-// this part stays commented out for now but needat the end to actually display working code!  
+// this part stays commented out for now but needat the end to actually display working code!
 
 // $(document).ready(function()  {
 //
