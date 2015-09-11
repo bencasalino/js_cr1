@@ -1,25 +1,23 @@
 
+var wordReplace = function(userString, userFind, userReplace) {
 //debugger;
 
+    var userStringLower = userString.toLowerCase();
+    var userFind = userFind.toLowerCase();
 
-var wordReplace = function(userString, userFind, userReplace) {
-  var userStringLower = userString.toLowerCase();
-  userFind = userFind.toLowerCase();
+  var arrayOfUserStringLower = userStringLower.split(" ");
+  var arrayOfUserString = userString.split(" ");
+  for (var i = 0; i < arrayOfUserString.length; i++) {
+    if (arrayOfUserStringLower[i] === userFind) {
+      arrayOfUserString[i] = userReplace;
+    }
+  }
 
-
-
-// this part stays commented out for now but needat the end to actually display working code!
-
-// $(document).ready(function()  {
-//
-//     $("form#countupby").submit(function(event) {
-//         var endNumber = ($("input#endNumber").val());
-//         var incrementer = ($("input#incrementer").val());
-//         var result = countUpBy(endNumber, incrementer);
-//
-//         $(".output").text(result);
-//
-//         $("#result").show();
-//         event.preventDefault();
-//     });
-// });
+// if result string is equal to user string return no match, othersise return resultstring
+  var resultString = arrayOfUserString.join(" ");
+  if (resultString === userString) {
+    return "no match";
+  } else {
+    return resultString;
+  }
+};
