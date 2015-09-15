@@ -5,7 +5,7 @@ describe("wordReplacer", function() {
     expect(wordReplace("taco", "taco", "burrito")).to.equal("burrito");
 });
 // test 2
-  it("will output the replacement word if input string matches the word to find", function() {
+  it("will output the replacement word if input string matches the word to find, taking into account capitalization", function() {
     expect(wordReplace("Soccer", "Soccer", "found")).to.equal("found");
 });
 //test 3
@@ -24,5 +24,10 @@ describe("wordReplacer", function() {
   it("can handle different 'cases' but doesnt change the original input word", function() {
     expect(wordReplace("THAT gUy is CrAzY", "guy", "bAt")).to.equal("THAT bAt is CrAzY");
 });
+//multiple matches
+//partial matches: given the sentence "hello there", searching for 'he' that no match is found.
+//punctuation: given the sentence "hello there!", searching for 'there' and replacing it with 'banana' that "hello banana!".
+
+// SO AWESOME that you remembered all those cases, and progressed through in a logical way.
 //stays at bottom to enclose describe function
 });
